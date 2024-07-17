@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Kumar Patel's Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rahul Kumar Patel</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <ul>
+                <li>My name is RAHUL KUMAR PATEL i am belong to PAN UMARIYA(KATNI)</li>
+                <li>I am currently pursuing B.TECH in computer sciense from RGPV UNIVERSITY</li>
+                <li>I am completing my schooling from PBHS school</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>C Language</li>
+                <li>C++ Language</li>
+                <li>PYTHON Language</li>
+                <li>SQL</li>
+                <li>DSA IN C++</li>
+                <li>Data Analytics</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Singing</li>
+                <li>Playing Cricket</li>
+                <li>Reading Books</li>
+                <!-- Add more hobbies as needed -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rahul Kumar Patel</p>
+    </footer>
+</body>
+</html>
+<!-- here is written the code -->
+<script>
+    const themeButton = document.getElementById('themeButton');
+    let darkThemeEnabled = false;
+
+    themeButton.addEventListener('click', () => {
+        darkThemeEnabled = !darkThemeEnabled;
+        if (darkThemeEnabled) {
+            enableDarkTheme();
+        } else {
+            disableDarkTheme();
+        }
+    });
+
+    function enableDarkTheme() {
+        document.body.classList.add('dark-theme');
+    }
+
+    function disableDarkTheme() {
+        document.body.classList.remove('dark-theme');
+    }
+</script>
